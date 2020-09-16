@@ -1,6 +1,22 @@
-export const add: Function = (...numbers: number[]): number => {
-  let sum: number = 0;
-  numbers.forEach((n: number) => (sum += n));
+export interface Department {
+  name: string;
+  courses: string[];
+}
 
-  return sum;
-};
+export interface Course {
+  name: string;
+  department: string;
+  subjects: string[];
+}
+
+export interface Subject {
+  name: string;
+  courses: string[];
+  documents: string[];
+}
+
+export interface Document {
+  name: string;
+  url: string;
+  subjects: string[];
+}

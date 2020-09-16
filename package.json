@@ -1,7 +1,7 @@
 {
-  "name": "the-notebook-types",
+  "name": "the-notebook-utils",
   "version": "1.0.0",
-  "description": "Typescript types for The Notebook",
+  "description": "Utility suite for The Notebook applications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wise-introvert/the-notebook-types.git"
+    "url": "git+https://github.com/wise-introvert/the-notebook-utils.git"
   },
   "author": "wise-introvert",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wise-introvert/the-notebook-types/issues"
+    "url": "https://github.com/wise-introvert/the-notebook-utils/issues"
   },
-  "homepage": "https://github.com/wise-introvert/the-notebook-types#readme",
+  "homepage": "https://github.com/wise-introvert/the-notebook-utils#readme",
   "devDependencies": {
     "@types/jest": "^26.0.13",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
