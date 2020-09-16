@@ -1,11 +1,20 @@
-language : node_js
-node_js :
- - stable
+language: node_js
+node_js:
+- stable
 install:
- - npm install
+- npm install
 script:
- - npm test
+- npm test
 after_success:
-  - npm run cover
-# Send coverage data to Coveralls
-after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
+- npm run cover
+after_script: 
+- cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
+deploy:
+  provider: npm
+  email: fardeen.wi.panjwani@gmail.com
+  api_key:
+    secure: nnxtkH4qQ7z6tfdO5Gw+AUIAGqAjfEEfpKomso6vFZghHLk21gA1clWPoZfIbIjB8i8pAnusJ6JoLtcGLsMOxoW73u7GFOAknH9mcEXRgu9EUtOGxjOvtjTEFTM2Ipzb14T537CT582AhVagmSj6sPRSo+/4QU2Atn3xBS+sRkxsXnFVQQAc9Igx3jxpEsKOs565STP6Yt6lOuUKnLShpdBsCB1fpBLJcVAsZXIuks2nO//3zLOQlVYMI80xNFpo4R1SykaktJ3AWH6l7B8zbi4nfQUDx8ny0GAc+rC2orolMNX/rfGvULEc/k7ECs+aYuAoEuosJp2pJw7zf/nOx45GexXAH8x5lBEnw6Ikd4xQoAMBQ/t3001EP2lMPMGNa0TLmVhbfIELUsEAO3HArb9T0HCzndpSx8Sx7ynM2g8NcJMLuQIRc4N11MyEJPx68QySsJ4gSsyxByTuq2SbdmLnYD+1WnoJILNLovSmmqaFEBlj4N8lb9AWZMuAZKHUevL1u+RGImCNryugGta3wgRo/AEWF4323N52kEfZDGJ241sTVc3ElsUChvqTH8FwZmPV8QCYPCSVgKz92IC9i9uB8W7fKcWqcSNKbCw39+v7cAo8wcEp1mew6R0f5osES6PFBkdAGCgmiIHxp32WXLoD+T/4XVhmiEQ6EDLXyYw=
+  on:
+    tags: true
+    repo: wise-introvert/the-notebook-utils
+  skip_cleanup: 'true'
