@@ -1,5 +1,5 @@
 {
-  "name": "@notebook/types",
+  "name": "the-notebook-types",
   "version": "1.0.0",
   "description": "Typescript types for The Notebook",
   "main": "dist/index.js",
