@@ -1,0 +1,29 @@
+{
+  "name": "@notebook/types",
+  "version": "1.0.0",
+  "description": "Typescript types for The Notebook",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wise-introvert/the-notebook-types.git"
+  },
+  "author": "wise-introvert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wise-introvert/the-notebook-types/issues"
+  },
+  "homepage": "https://github.com/wise-introvert/the-notebook-types#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0"
+  }
+}
