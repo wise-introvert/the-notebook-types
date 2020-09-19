@@ -1,3 +1,5 @@
+export * from "./utils";
+
 export interface Department {
   name: string;
   courses: string[];
