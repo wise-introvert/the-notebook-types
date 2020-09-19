@@ -1,6 +1,6 @@
 {
   "name": "the-notebook-utils",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Utility suite for The Notebook applications",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
