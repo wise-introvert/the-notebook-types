@@ -2,7 +2,7 @@ export interface GetRouteOptions {
   base?: string;
 }
 
-export const getRoute: Function = (
+export const getRoute = (
   sub: string,
   leaf?: string,
   options?: GetRouteOptions

@@ -2,11 +2,12 @@
   "name": "the-notebook-utils",
   "version": "1.1.0",
   "description": "Utility suite for The Notebook applications",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
+    "prepublish": "rm -rf dist; tsc",
     "cover": "istanbul cover node_modules/.bin/jest **/*.test.ts",
-    "build": "tsc",
+    "build": "rm -rf dist; tsc",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
