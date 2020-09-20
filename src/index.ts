@@ -1,4 +1,13 @@
+import mongoose from "mongoose";
+
 export * from "./utils";
+
+export interface IUser extends mongoose.Document {
+  name: string;
+  username: string;
+  password: string;
+  email?: string;
+}
 
 export interface Department {
   name: string;
